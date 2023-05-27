@@ -1,5 +1,5 @@
 root {
-  --text: #ffffff;
+  --text: #FFFFFF;
   --background: #000000;
   --primary: #FEC400;
   --secondary: #0D0D0D;
@@ -8,15 +8,51 @@ root {
 
 h1 {
   font-size: 4.8rem;
-  font-family: Plus Jakarta Sans, sans-serif;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 3.2rem;
-  font-family: Plus Jakarta Sans, sans-serif;
+  font-weight: bold;
 }
 
 p {
   font-size: 1.8rem;
-  font-family: Plus Jakarta Sans, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--background);
+}
+
+.wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 3.2rem;
+    color: var(--text);
+  }
+  .links {
+
+    a {
+      background-color: var(--primary);
+      padding: 10px;
+      color: var(--background);
+    }
+  }
 }
